@@ -17,6 +17,8 @@ h1{
 }
 .news-flash{
     margin-top: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 .article-section {
 
@@ -34,3 +36,9 @@ h1{
     font-size: 30px;
     text-align: center;
   }
+
+  footer {
+    color: #0f25a1;
+    text-align: center;
+    padding: 10px;
+}
