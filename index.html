@@ -17,55 +17,49 @@
 
 
     </style>
-    <section class="news-flash">
-        <marquee><p>Best Website in the World</p></marquee>
-    </section>
-    <main class="article-section">
+  <section class="news-flash">
+    <marquee><p>Best Website in the World</p></marquee>
+</section>
 
-        <article class="articles">
-           <h2>Switzerland’s priciest street makes room for a bakery shop</h2>
-           <img src="image1.png" alt="image1">
-           <p>It is one of the most expensive streets for shopping in Switzerland where jewellery, watches and 
-            designer clothes worth tens of thousands of Swiss francs can be purchased. We are talking about 
-            Zurich’s Bahnhofstrasse. You can now also buy a sandwich here thanks to a new bakery. </p>
-        </article>
+<main class="article-section">
 
-        <article class="articles">
-           <h2>News heading2</h2>
-           <p>News Summary</p>
-           <img src="" alt="">
+    <article class="articles">
+       <h2>Switzerland’s priciest street makes room for a bakery shop</h2>
+       <button class="speak-button" onclick="speakText('Switzerland’s priciest street makes room for a bakery shop')">Listen</button>
+       <img src="image1.png" alt="bakery">
+       <p>It is one of the most expensive streets for shopping in Switzerland where jewellery, watches and 
+        designer clothes worth tens of thousands of Swiss francs can be purchased. You can now also buy a sandwich here thanks to a new bakery.</p>
+    </article>
 
-        </article>
+    <article class="articles">
+       <h2>Swiss textile heavyweight Rieter plans further job cuts</h2>
+       <img src="image2.png" alt="News image 2">
+       <p>Textile machinery manufacturer Rieter is to cut more than 10% of its workforce in Switzerland. 
+        This latest restructuring is the latest in a long series for the Zurich-based group, 
+        which saw its revenues fall by almost half in the first half of 2024.</p>
+    </article>
 
-        <article class="articles">
-           <h2>News heading3</h2>
-           <p>News Summary</p>
-           <img src="" alt="">
+    <article class="articles">
+       <h2>Raw milk:Loophole gives Swiss the freedom to skip pasteurisation</h2>
+       <img src="image3.png" alt="News image 3">
+       <p>Once considered dangerous, raw milk is now back in people’s fridges. 
+        Legislation worldwide is adapting. Switzerland relies on labelling and personal responsibility. </p>
+    </article>
 
-        </article>
-
-        <article class="articles">
-           <h2>News heading4</h2>
-           <p>News Summary</p>
-           <img src="" alt="">
-        </article>
-
-        <article class="articles">
-           <h2>News heading5</h2>
-           <p>News Summary</p>
-           <img src="" alt="">
-        </article>
-
-        <article class="articles">
-           <h2>News heading6</h2>
-           <p>News Summary</p>
-           <img src="" alt="">
-        </article>
-    </main>
-
+</main>
     <footer>
         <p>&copy; 2024 Swiss News</p>
     </footer>
+
+    <script>
+        // Function to trigger text-to-speech
+        function speakText(text) {
+            const speech = new SpeechSynthesisUtterance(text);
+            speech.lang = 'en-US'; // Set language to English (adjust as necessary)
+            speech.rate = 1; // Speed of speech
+            window.speechSynthesis.speak(speech);
+        }
+    </script>
     
 </body>
 </html>
