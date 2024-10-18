@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(228, 237, 234);
+    background-color: rgb(206, 224, 224);
 }
 
 .intro-section{
@@ -26,16 +26,27 @@ h1{
     grid-template-columns: auto auto auto;
     padding: 20px;
     margin: 30px auto;
-
 }
 
 .articles {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
     text-align: center;
+    gap: 20px;
+    max-width: 25vw;
   }
+
+.articles > h2{
+    font-size: 20px;
+    text-align: center;
+ 
+}
+
+.articles > p{
+    font-size: 15px;
+    text-align: center;
+}
 
   footer {
     color: #0f25a1;
